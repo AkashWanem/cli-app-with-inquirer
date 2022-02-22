@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AkashWanem/cli-app-with-inquirer/issues"
   },
-  "homepage": "https://github.com/AkashWanem/cli-app-with-inquirer#readme"
+  "homepage": "https://github.com/AkashWanem/cli-app-with-inquirer#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
