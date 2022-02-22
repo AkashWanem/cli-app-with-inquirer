@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 /*
 inquirer
@@ -19,7 +20,10 @@ inquirer
     }
   ])
   .then((answers) => {
-    // Use user feedback for... whatever!!
+       fs.writeFile('log.txt', `Name: ${answers.name}`, (err) => {
+           console.log('done')
+       })
+    console.log(answers);
   })
   .catch((error) => {
     if (error.isTtyError) {
